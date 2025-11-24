@@ -1,0 +1,16 @@
+{
+  "java.project.sourcePaths": [
+    "java",
+    "app"
+  ],
+  "java.project.outputPath": "classes",
+  "java.jdt.ls.java.home": "/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.262.b10-0.el7_8.x86_64",
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-1.8",
+      "path": "/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.262.b10-0.el7_8.x86_64"
+    }
+  ],
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.configuration.updateBuildConfiguration": "automatic"
+}

@@ -1,0 +1,131 @@
+Adding package `python3_11/3.11.11` to your environment
+Adding package `cmake/3.28.3` to your environment
+Adding dependency `gcc/12.2.0` to your environment
+Adding package `llvm/17.0.6` to your environment
+make[1]: Entering directory `/lustre/parot/MiguelRosas/Section_Level_Tuning/TuningSystemJasonFinal-Section/SNU_NPB-1.0.3/NPB3.3-SER-C/sys'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/lustre/parot/MiguelRosas/Section_Level_Tuning/TuningSystemJasonFinal-Section/SNU_NPB-1.0.3/NPB3.3-SER-C/sys'
+../sys/setparams cg C
+gcc -O3 -fopenmp -mcmodel=large -o ../bin/cg.C.x cg.o ../common/print_results.o ../common/randdp.o ../common/c_timers.o ../common/wtime.o -lpapi -lm
+Entry4: 3 Nasa CG_SPARSE_W1_L0 C Tuning N 1 procedures_sparse
+-alias=2 -Tuning_Analysis=1;sparse>S0<[sparse#3%alias=2,tinline=mode=1:depth:0:pragma=0:foronly=1:complement=0:functions=sparse,induction=3,privatize=2,parallelize-loops=1,reduction=2,loop_interchange=j_k]/S1<[sparse#4%alias=2,tinline=mode=1:depth:0:pragma=0:foronly=1:complement=0:functions=sparse,induction=3,privatize=2,parallelize-loops=1,reduction=2,loop_interchange=none]/S2<[sparse#6%alias=2,tinline=mode=1:depth:0:pragma=0:foronly=1:complement=0:functions=sparse,induction=3,privatize=2,parallelize-loops=1,reduction=2,loop_interchange=none]
+####ERROR
+####ERROR¡EMD
+
+['TimeInstrument_Tuning_section_sparse_S0', 'TimeInstrument_Tuning_section_sparse_S1', 'TimeInstrument_Tuning_section_sparse_S2']
+The actual procedure is: TimeInstrument_Tuning_section_sparse_S0
+The actual procedure is: TimeInstrument_Tuning_section_sparse_S1
+The actual procedure is: TimeInstrument_Tuning_section_sparse_S2
+TimeInstrument_Tuning_section_sparse_S0 The Execution Time is: 0.078
+TimeInstrument_Tuning_section_sparse_S1 The Execution Time is: 10.507
+TimeInstrument_Tuning_section_sparse_S2 The Execution Time is: 0.039
+Python script exited with code 0
+Sections not completed because of : TimeInstrument_Tuning_section_sparse#3_S0
+Sections not completed because of : TimeInstrument_Tuning_section_sparse#4_S1
+Sections not completed because of : TimeInstrument_Tuning_section_sparse#6_S2
+-alias=2 -Tuning_Analysis=1;sparse>S0<[sparse#3%alias=2,tinline=0,induction=3,privatize=2,parallelize-loops=1,reduction=2,loop_interchange=j_k]/S1<[sparse#4%alias=2,tinline=0,induction=3,privatize=2,parallelize-loops=1,reduction=2,loop_interchange=none]/S2<[sparse#6%alias=2,tinline=0,induction=3,privatize=2,parallelize-loops=1,reduction=2,loop_interchange=none]
+####ERROR
+####ERROR¡EMD
+
+['TimeInstrument_Tuning_section_sparse_S0', 'TimeInstrument_Tuning_section_sparse_S1', 'TimeInstrument_Tuning_section_sparse_S2']
+The actual procedure is: TimeInstrument_Tuning_section_sparse_S0
+The actual procedure is: TimeInstrument_Tuning_section_sparse_S1
+The actual procedure is: TimeInstrument_Tuning_section_sparse_S2
+TimeInstrument_Tuning_section_sparse_S0 The Execution Time is: 0.078
+TimeInstrument_Tuning_section_sparse_S1 The Execution Time is: 10.472
+TimeInstrument_Tuning_section_sparse_S2 The Execution Time is: 0.039
+Python script exited with code 0
+Section Techniques: TimeInstrument_Tuning_section_sparse_S0 0.078 0.078 0.0
+Section Techniques: TimeInstrument_Tuning_section_sparse_S1 10.472 10.507 -0.333111259160561
+Section Techniques: TimeInstrument_Tuning_section_sparse_S2 0.039 0.039 0.0
+It has not been visited :TimeInstrument_Tuning_section_sparse#3_S0 Techique :sparse#3%induction
+It has not been visited :TimeInstrument_Tuning_section_sparse#4_S1 Techique :sparse#4%induction
+It has not been visited :TimeInstrument_Tuning_section_sparse#6_S2 Techique :sparse#6%induction
+Sections not completed because of : TimeInstrument_Tuning_section_sparse#3_S0
+Sections not completed because of : TimeInstrument_Tuning_section_sparse#4_S1
+Sections not completed because of : TimeInstrument_Tuning_section_sparse#6_S2
+-alias=2 -Tuning_Analysis=1;sparse>S0<[sparse#3%alias=2,tinline=0,induction=0,privatize=2,parallelize-loops=1,reduction=2,loop_interchange=j_k]/S1<[sparse#4%alias=2,tinline=0,induction=0,privatize=2,parallelize-loops=1,reduction=2,loop_interchange=none]/S2<[sparse#6%alias=2,tinline=0,induction=0,privatize=2,parallelize-loops=1,reduction=2,loop_interchange=none]
+####ERROR
+####ERROR¡EMD
+
+['TimeInstrument_Tuning_section_sparse_S0', 'TimeInstrument_Tuning_section_sparse_S1', 'TimeInstrument_Tuning_section_sparse_S2']
+The actual procedure is: TimeInstrument_Tuning_section_sparse_S0
+The actual procedure is: TimeInstrument_Tuning_section_sparse_S1
+The actual procedure is: TimeInstrument_Tuning_section_sparse_S2
+TimeInstrument_Tuning_section_sparse_S0 The Execution Time is: 0.078
+TimeInstrument_Tuning_section_sparse_S1 The Execution Time is: 9.935
+TimeInstrument_Tuning_section_sparse_S2 The Execution Time is: 0.039
+Python script exited with code 0
+Section Techniques: TimeInstrument_Tuning_section_sparse_S0 0.078 0.078 0.0
+Section Techniques: TimeInstrument_Tuning_section_sparse_S1 9.935 10.507 -5.443989721138281
+Section Techniques: TimeInstrument_Tuning_section_sparse_S2 0.039 0.039 0.0
+It has not been visited :TimeInstrument_Tuning_section_sparse#3_S0 Techique :sparse#3%privatize
+It has not been visited :TimeInstrument_Tuning_section_sparse#4_S1 Techique :sparse#4%privatize
+It has not been visited :TimeInstrument_Tuning_section_sparse#6_S2 Techique :sparse#6%privatize
+Sections not completed because of : TimeInstrument_Tuning_section_sparse#3_S0
+Sections not completed because of : TimeInstrument_Tuning_section_sparse#4_S1
+Sections not completed because of : TimeInstrument_Tuning_section_sparse#6_S2
+-alias=2 -Tuning_Analysis=1;sparse>S0<[sparse#3%alias=2,tinline=0,induction=0,privatize=0,parallelize-loops=1,reduction=2,loop_interchange=j_k]/S1<[sparse#4%alias=2,tinline=0,induction=0,privatize=0,parallelize-loops=1,reduction=2,loop_interchange=none]/S2<[sparse#6%alias=2,tinline=0,induction=0,privatize=0,parallelize-loops=1,reduction=2,loop_interchange=none]
+####ERROR
+####ERROR¡EMD
+
+['TimeInstrument_Tuning_section_sparse_S0', 'TimeInstrument_Tuning_section_sparse_S1', 'TimeInstrument_Tuning_section_sparse_S2']
+The actual procedure is: TimeInstrument_Tuning_section_sparse_S0
+The actual procedure is: TimeInstrument_Tuning_section_sparse_S1
+The actual procedure is: TimeInstrument_Tuning_section_sparse_S2
+TimeInstrument_Tuning_section_sparse_S0 The Execution Time is: 0.079
+TimeInstrument_Tuning_section_sparse_S1 The Execution Time is: 9.976
+TimeInstrument_Tuning_section_sparse_S2 The Execution Time is: 0.039
+Python script exited with code 0
+Section Techniques: TimeInstrument_Tuning_section_sparse_S0 0.079 0.078 1.2820512820512833
+Section Techniques: TimeInstrument_Tuning_section_sparse_S1 9.976 10.507 -5.05377367469305
+Section Techniques: TimeInstrument_Tuning_section_sparse_S2 0.039 0.039 0.0
+It has not been visited :TimeInstrument_Tuning_section_sparse#3_S0 Techique :sparse#3%parallelize-loops
+It has not been visited :TimeInstrument_Tuning_section_sparse#4_S1 Techique :sparse#4%parallelize-loops
+It has not been visited :TimeInstrument_Tuning_section_sparse#6_S2 Techique :sparse#6%parallelize-loops
+Sections not completed because of : TimeInstrument_Tuning_section_sparse#3_S0
+Sections not completed because of : TimeInstrument_Tuning_section_sparse#4_S1
+Sections not completed because of : TimeInstrument_Tuning_section_sparse#6_S2
+-alias=2 -Tuning_Analysis=1;sparse>S0<[sparse#3%alias=2,tinline=0,induction=0,privatize=0,parallelize-loops=0,reduction=2,loop_interchange=j_k]/S1<[sparse#4%alias=2,tinline=0,induction=0,privatize=0,parallelize-loops=0,reduction=2,loop_interchange=none]/S2<[sparse#6%alias=2,tinline=0,induction=0,privatize=0,parallelize-loops=0,reduction=2,loop_interchange=none]
+####ERROR
+####ERROR¡EMD
+
+['TimeInstrument_Tuning_section_sparse_S0', 'TimeInstrument_Tuning_section_sparse_S1', 'TimeInstrument_Tuning_section_sparse_S2']
+The actual procedure is: TimeInstrument_Tuning_section_sparse_S0
+The actual procedure is: TimeInstrument_Tuning_section_sparse_S1
+The actual procedure is: TimeInstrument_Tuning_section_sparse_S2
+TimeInstrument_Tuning_section_sparse_S0 The Execution Time is: 0.046
+TimeInstrument_Tuning_section_sparse_S1 The Execution Time is: 10.607
+TimeInstrument_Tuning_section_sparse_S2 The Execution Time is: 0.039
+Python script exited with code 0
+Section Techniques: TimeInstrument_Tuning_section_sparse_S0 0.046 0.078 -41.02564102564102
+Section Techniques: TimeInstrument_Tuning_section_sparse_S1 10.607 10.507 0.9517464547444527
+Section Techniques: TimeInstrument_Tuning_section_sparse_S2 0.039 0.039 0.0
+It has not been visited :TimeInstrument_Tuning_section_sparse#3_S0 Techique :sparse#3%reduction
+It has not been visited :TimeInstrument_Tuning_section_sparse#4_S1 Techique :sparse#4%reduction
+It has not been visited :TimeInstrument_Tuning_section_sparse#6_S2 Techique :sparse#6%reduction
+Sections not completed because of : TimeInstrument_Tuning_section_sparse#3_S0
+Sections not completed because of : TimeInstrument_Tuning_section_sparse#4_S1
+Sections not completed because of : TimeInstrument_Tuning_section_sparse#6_S2
+-alias=2 -Tuning_Analysis=1;sparse>S0<[sparse#3%alias=2,tinline=0,induction=0,privatize=0,parallelize-loops=0,reduction=0,loop_interchange=j_k]/S1<[sparse#4%alias=2,tinline=0,induction=0,privatize=0,parallelize-loops=0,reduction=0,loop_interchange=none]/S2<[sparse#6%alias=2,tinline=0,induction=0,privatize=0,parallelize-loops=0,reduction=0,loop_interchange=none]
+####ERROR
+####ERROR¡EMD
+
+['TimeInstrument_Tuning_section_sparse_S0', 'TimeInstrument_Tuning_section_sparse_S1', 'TimeInstrument_Tuning_section_sparse_S2']
+The actual procedure is: TimeInstrument_Tuning_section_sparse_S0
+The actual procedure is: TimeInstrument_Tuning_section_sparse_S1
+The actual procedure is: TimeInstrument_Tuning_section_sparse_S2
+TimeInstrument_Tuning_section_sparse_S0 The Execution Time is: 0.046
+TimeInstrument_Tuning_section_sparse_S1 The Execution Time is: 10.604
+TimeInstrument_Tuning_section_sparse_S2 The Execution Time is: 0.039
+Python script exited with code 0
+Section Techniques: TimeInstrument_Tuning_section_sparse_S0 0.046 0.078 -41.02564102564102
+Section Techniques: TimeInstrument_Tuning_section_sparse_S1 10.604 10.507 0.9231940611021179
+Section Techniques: TimeInstrument_Tuning_section_sparse_S2 0.039 0.039 0.0
+It has not been visited :TimeInstrument_Tuning_section_sparse#3_S0 Techique :sparse#3%loop_interchange
+It has not been visited :TimeInstrument_Tuning_section_sparse#4_S1 Techique :sparse#4%loop_interchange
+It has not been visited :TimeInstrument_Tuning_section_sparse#6_S2 Techique :sparse#6%loop_interchange
+Sections not completed because of : TimeInstrument_Tuning_section_sparse#3_S0
+Sections not completed because of : TimeInstrument_Tuning_section_sparse#4_S1
+Sections not completed because of : TimeInstrument_Tuning_section_sparse#6_S2
+-alias=2 -Tuning_Analysis=1;sparse>S0<[sparse#3%alias=2,tinline=0,induction=0,privatize=0,parallelize-loops=0,reduction=0,loop_interchange=0]/S1<[sparse#4%alias=2,tinline=0,induction=0,privatize=0,parallelize-loops=0,reduction=0,loop_interchange=0]/S2<[sparse#6%alias=2,tinline=0,induction=0,privatize=0,parallelize-loops=0,reduction=0,loop_interchange=0]

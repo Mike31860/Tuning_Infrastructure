@@ -1,30 +1,20 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-       
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}",
-            "args": "3 Nasa BT A Tuning Compute_rhs#0 2",
-        },
-        {
-            "type": "java",
-            "name": "Main",
-            "request": "launch",
-            "mainClass": "Main",
-            "projectName": "TuningLocalJasonLoop",
-            "args": "3 Nasa BT A Tuning Compute_rhs#0 2",
-            "pathMappings": [
-                {
-                    "localRoot": "${workspaceFolder}",
-                    "remoteRoot": "/mnt/c/Users/Migue/Documents/workspace-spring-tool-suite-4-4.12.1.RELEASE/TuningLocalJasonLoop"
-                }
-            ]
-        }
-    ]
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "app.Main",
+      "projectName": "TuningSystem_Back_End_Sections_8c692cb0",
+      "args": [
+        "3",
+        "Poly",
+        "2mm",
+        "scale6d",
+        "Tuning",
+        "0",
+        "1"
+      ],
+    }
+  ]
 }
